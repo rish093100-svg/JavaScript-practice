@@ -1,13 +1,13 @@
 const marvel_heros = ["thor", "Ironman", "spiderman"]
 const dc_heros = ["superman", "flash", "batman"]
 
-// marvel_heros.push(dc_heros)
+marvel_heros.push(dc_heros)
 
-// console.log(marvel_heros);
-// console.log(marvel_heros[3][1]);
+console.log(marvel_heros); // marvel heroes ke andar dc heroes aa jayenge pura array ek elemnt ki tarah count hoga
+console.log(marvel_heros[3][1]); // 3rd element ki first value jo ki (flash) hai
 
-// const allHeros = marvel_heros.concat(dc_heros)
-// console.log(allHeros);
+const allHeros = marvel_heros.concat(dc_heros) //dono array ko proper merge kar dega
+console.log(allHeros);
 
 const all_new_heros = [...marvel_heros, ...dc_heros]
 
