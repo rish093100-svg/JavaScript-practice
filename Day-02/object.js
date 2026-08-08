@@ -7,24 +7,24 @@ const mySym = Symbol("key1")
 
 
 const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
+    name: "Tony",
+    "full name": "Tony Stark",
     [mySym]: "mykey1",
     age: 18,
-    location: "Jaipur",
-    email: "hitesh@google.com",
+    location: "New york",
+    email: "jarvis@google.com",
     isLoggedIn: false,
     lastLoginDays: ["Monday", "Saturday"]
 }
 
 // console.log(JsUser.email)
-// console.log(JsUser["email"])
-// console.log(JsUser["full name"])
+// console.log(JsUser["email"]) => 2nd method to access objects
+// console.log(JsUser["full name"]) 
 // console.log(JsUser[mySym])
 
-JsUser.email = "hitesh@chatgpt.com"
-// Object.freeze(JsUser)
-JsUser.email = "hitesh@microsoft.com"
+JsUser.email = "jarvis@chatgpt.com"
+// Object.freeze(JsUser) => freeze karne se hum uski value ko change nhi kar payenge
+JsUser.email = "jarvish@microsoft.com"
 // console.log(JsUser);
 
 JsUser.greeting = function(){
@@ -34,5 +34,5 @@ JsUser.greetingTwo = function(){
     console.log(`Hello JS user, ${this.name}`);
 }
 
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+console.log(JsUser.greeting()); // Hello JS user
+console.log(JsUser.greetingTwo()); // Hello JS user, Tony
